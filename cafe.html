@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>My Cafe</h1>
+
+        <p id="opening-status">Checking status...</p>
+
+        <p>Welcome to our cafe</p>
+
+        <button id="theme-button">
+            Toggle Light/Dark Mode
+        </button>
+
+    </header>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <main>
+
+        <section id="home">
+
+            <h2>Welcome to Our Cafe</h2>
+
+            <p>
+                Welcome to our cafe where you can enjoy fresh drinks, delicious pastries and a comfortable environment.
+            </p>
+
+            <img src="image.png" alt="Cafe Image" width="200">
+
+        </section>
+
+
+        <section id="menu">
+
+            <h2>Our Menu</h2>
+
+            <p>
+                Select your favorite items to calculate your total order.
+            </p>
+
+            <div id="filter-buttons">
+
+                <button class="filter-button" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-button" data-category="Drinks">
+                    Drinks
+                </button>
+
+                <button class="filter-button" data-category="Pastries">
+                    Pastries
+                </button>
+
+            </div>
+
+            <br>
+
+            <table id="menu-table">
+
+                <tr>
+
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Select</th>
+
+                </tr>
+
+
+                <tr data-category="Drinks">
+
+                    <td>Espresso</td>
+                    <td>Drinks</td>
+                    <td>$3</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="3">
+                    </td>
+
+                </tr>
+
+
+                <tr data-category="Drinks">
+
+                    <td>Cappuccino</td>
+                    <td>Drinks</td>
+                    <td>$4</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="4">
+                    </td>
+
+                </tr>
+
+
+                <tr data-category="Drinks">
+
+                    <td>Latte</td>
+                    <td>Drinks</td>
+                    <td>$5</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="5">
+                    </td>
+
+                </tr>
+
+
+                <tr data-category="Pastries">
+
+                    <td>Croissant</td>
+                    <td>Pastries</td>
+                    <td>$4</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="4">
+                    </td>
+
+                </tr>
+
+
+                <tr data-category="Pastries">
+
+                    <td>Chocolate Cake</td>
+                    <td>Pastries</td>
+                    <td>$6</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="6">
+                    </td>
+
+                </tr>
+
+
+                <tr data-category="Pastries">
+
+                    <td>Blueberry Muffin</td>
+                    <td>Pastries</td>
+                    <td>$5</td>
+
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="5">
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <p id="total">
+                Total: $0
+            </p>
+
+        </section>
+
+
+        <section id="about">
+
+            <h2>About Us</h2>
+
+            <article>
+
+                <h3>Our Cafe Story</h3>
+
+                <p>
+                    Our cafe is a friendly place where people can relax, enjoy fresh coffee and spend time with friends.
+                </p>
+
+                <p id="extra-text" style="display: none;">
+                    We prepare our drinks and pastries with care. Our goal is to provide good food, quality drinks and a comfortable experience for every customer.
+                </p>
+
+                <button id="read-more-button">
+                    Read More
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Our Specialties</h2>
+
+            <ul>
+
+                <li>Fresh Coffee</li>
+                <li>Fresh Pastries</li>
+                <li>Homemade Cakes</li>
+
+            </ul>
+
+
+            <h3>Why Visit Us?</h3>
+
+            <ol type="A">
+
+                <li>Fresh Food</li>
+                <li>Friendly Service</li>
+                <li>Comfortable Environment</li>
+
+            </ol>
+
+        </section>
+
+
+        <section>
+
+            <h2>Our Services</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Service</th>
+                    <th>Information</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Dine In</td>
+                    <td>Comfortable seating for customers</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Takeaway</td>
+                    <td>Fresh food and drinks to go</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form id="contact-form">
+
+                <label for="name">
+                    Name:
+                </label>
+
+                <input type="text" id="name" name="name" autocomplete="name" required>
+
+                <br><br>
+
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <br><br>
+
+
+                <label for="birth-year">
+                    Birth Year:
+                </label>
+
+                <input type="text" id="birth-year" name="birth-year">
+
+                <br><br>
+
+
+                <p>Gender:</p>
+
+                <label for="male">
+                    Male
+                </label>
+
+                <input type="radio" id="male" name="gender">
+
+                <label for="female">
+                    Female
+                </label>
+
+                <input type="radio" id="female" name="gender">
+
+                <br><br>
+
+
+                <label for="special-notes">
+                    Special Request:
+                </label>
+
+                <br>
+
+                <textarea id="special-notes" name="special-notes" maxlength="100"></textarea>
+
+                <p id="character-count">
+                    100 characters remaining
+                </p>
+
+
+                <input type="submit" id="submit" value="Submit">
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Cafe - 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
