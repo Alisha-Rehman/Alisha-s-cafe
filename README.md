@@ -12,7 +12,7 @@ A modern and responsive cafe website designed to provide visitors with an attrac
 
 ## 🚀 How to Run the Project
 
-You can view the live project directly here: [Live Demo](INSERT_YOUR_GITHUB_PAGES_LINK_HERE)
+You can view the live project directly here: [Live Demo](https://alisha-rehman.github.io/Alisha-s-cafe/)
 
 Alternatively, to run it locally:
 
